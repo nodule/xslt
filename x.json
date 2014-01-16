@@ -40,7 +40,7 @@
           }
         }
       },
-      "fn": "output.out = libxsltjs.transform(\n  libxsltjs.readXmlString(input.xml),\n  libxsltjs.readXsltString(input.xsl),\n  []\n);\n"
+      "fn": "var xml = libxsltjs.readXmlString(input.xml),\n  xsl = libxsltjs.readXsltString(input.xsl);\n\noutput.out = libxsltjs.transform(xml, xsl, []);\n"
     }
   ],
   "twigs": []
