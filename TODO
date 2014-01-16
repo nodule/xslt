@@ -1,0 +1,3 @@
+Create a unified package for both server and browser so
+it can be required as psichi/xslt and the node works with
+both browserify and node.js.

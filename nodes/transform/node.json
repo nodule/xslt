@@ -1,0 +1,31 @@
+{
+  "name": "transform",
+  "ns": "xslt",
+  "description": "Transform XML with XSL",
+  "phrases": {
+    "active": "Transforming XML"
+  },
+  "require": {
+    "node_xslt": "0.x.x"
+  },
+  "ports": {
+    "input": {
+      "xml": {
+        "title": "XML",
+        "type": "string",
+        "format": "xml"
+      },
+      "xsl": {
+        "title": "XSL Stylesheet",
+        "type": "string",
+        "format": "xml"
+      }
+    },
+    "output": {
+      "out": {
+        "title": "out",
+        "type": "string"
+      }
+    }
+  }
+}
