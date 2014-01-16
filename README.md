@@ -1,2 +1,2 @@
-Chi for Chiχ
+XSLT for Chiχ
 ====
