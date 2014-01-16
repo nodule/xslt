@@ -6,7 +6,7 @@
     "active": "Transforming XML"
   },
   "require": {
-    "node_xslt": "0.x.x"
+    "libxsltjs": "0.x.x"
   },
   "ports": {
     "input": {

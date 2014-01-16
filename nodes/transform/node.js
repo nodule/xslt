@@ -1,5 +1,5 @@
-output.out = node_xslt.transform(
-  node_xslt.readXmlString(input.xml),
-  node_xslt.readXsltString(input.xsl),
+output.out = libxsltjs.transform(
+  libxsltjs.readXmlString(input.xml),
+  libxsltjs.readXsltString(input.xsl),
   []
 );
