@@ -40,7 +40,7 @@
           }
         }
       },
-      "fn": "output.out = node_xslt.transform(\n  node_xslt.readXmlString(input.xml),\n  node_xslt.readXsltString(input.xsl)\n)\n"
+      "fn": "output.out = node_xslt.transform(\n  node_xslt.readXmlString(input.xml),\n  node_xslt.readXsltString(input.xsl),\n  []\n);\n"
     }
   ],
   "twigs": []
