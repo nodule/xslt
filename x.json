@@ -11,15 +11,6 @@
   },
   "nodes": [
     {
-      "name": "transform",
-      "ns": "xslt",
-      "description": "Transform XML with XSL",
-      "phrases": {
-        "active": "Transforming XML"
-      },
-      "require": {
-        "libxsltjs": "0.x.x"
-      },
       "ports": {
         "input": {
           "xml": {
@@ -40,8 +31,19 @@
           }
         }
       },
+      "require": {
+        "libxsltjs": "0.x.x"
+      },
+      "phrases": {
+        "active": "Transforming XML"
+      },
+      "description": "Transform XML with XSL",
+      "ns": "xslt",
+      "name": "transform",
+      "env": "server",
       "fn": "var xml = libxsltjs.readXmlString(input.xml),\n  xsl = libxsltjs.readXsltString(input.xsl);\n\noutput.out = libxsltjs.transform(xml, xsl, []);\n"
     }
   ],
-  "twigs": []
+  "twigs": [],
+  "env": "server"
 }
