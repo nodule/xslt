@@ -11,6 +11,11 @@
   },
   "nodes": [
     {
+      "dependencies": {
+        "npm": {
+          "libxsltjs": "0.x.x"
+        }
+      },
       "ports": {
         "input": {
           "xml": {
@@ -30,9 +35,6 @@
             "type": "string"
           }
         }
-      },
-      "require": {
-        "libxsltjs": "0.x.x"
       },
       "phrases": {
         "active": "Transforming XML"

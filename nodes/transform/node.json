@@ -5,9 +5,6 @@
   "phrases": {
     "active": "Transforming XML"
   },
-  "require": {
-    "libxsltjs": "0.x.x"
-  },
   "ports": {
     "input": {
       "xml": {
@@ -26,6 +23,11 @@
         "title": "out",
         "type": "string"
       }
+    }
+  },
+  "dependencies": {
+    "npm": {
+      "libxsltjs": "0.x.x"
     }
   }
 }
