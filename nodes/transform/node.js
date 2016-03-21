@@ -1,4 +1,4 @@
-var xml = libxsltjs.readXmlString($.xml),
-  xsl = libxsltjs.readXsltString($.xsl);
+var xml = libxsltjs.readXmlString($.xml);
+var xsl = libxsltjs.readXsltString($.xsl);
 
-output.out = libxsltjs.transform(xml, xsl, []);
+output.out = $.create(libxsltjs.transform(xml, xsl, []));
