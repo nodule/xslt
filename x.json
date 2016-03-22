@@ -43,7 +43,7 @@
       "ns": "xslt",
       "name": "transform",
       "env": "server",
-      "fn": "var xml = libxsltjs.readXmlString(input.xml),\n  xsl = libxsltjs.readXsltString(input.xsl);\n\noutput.out = libxsltjs.transform(xml, xsl, []);\n"
+      "fn": "var xml = libxsltjs.readXmlString($.xml);\nvar xsl = libxsltjs.readXsltString($.xsl);\n\noutput.out = $.create(libxsltjs.transform(xml, xsl, []));\n"
     }
   ],
   "twigs": [],
