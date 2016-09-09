@@ -11,10 +11,11 @@
   },
   "nodes": [
     {
-      "dependencies": {
-        "npm": {
-          "libxsltjs": "0.x.x"
-        }
+      "name": "transform",
+      "ns": "xslt",
+      "description": "Transform XML with XSL",
+      "phrases": {
+        "active": "Transforming XML"
       },
       "ports": {
         "input": {
@@ -36,16 +37,14 @@
           }
         }
       },
-      "phrases": {
-        "active": "Transforming XML"
+      "dependencies": {
+        "npm": {
+          "libxsltjs": "0.x.x"
+        }
       },
-      "description": "Transform XML with XSL",
-      "ns": "xslt",
-      "name": "transform",
       "env": "server",
       "fn": "var xml = libxsltjs.readXmlString($.xml);\nvar xsl = libxsltjs.readXsltString($.xsl);\n\noutput.out = $.create(libxsltjs.transform(xml, xsl, []));\n"
     }
   ],
-  "twigs": [],
   "env": "server"
 }
